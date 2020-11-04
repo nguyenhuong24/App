@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/mess_profile"
+        android:src="@drawable/profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/mess_profile"
+        android:background="@drawable/receive_mess_layout"
+        android:id="@+id/tv_receive_mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp"
+        android:text="receive mess"
+        />
+    <TextView
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="5dp"
+    android:layout_toRightOf="@+id/tv_receive_mess"
+    android:id="@+id/tv_time_receive"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:textColor="#FFFFFF"
+    android:textSize="12sp"
+    android:text="time mess"
+    />
+    <ImageView
+
+        android:id="@+id/message_receiver_image_view"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/mess_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/message_sender_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/send_mess_layout"
+        android:id="@+id/tv_send_mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp"
+        android:text="send mess"
+        android:layout_alignParentTop="@+id/tv_receive_mess"/>
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/tv_send_mess"
+        android:id="@+id/tv_time_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:text="time mess"
+        />
+
+</RelativeLayout>

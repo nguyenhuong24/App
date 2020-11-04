@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".activity.PhoneLoginActivity">
+    <EditText
+        android:id="@+id/edt_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Phone Number"
+        android:background="@drawable/inputs"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/phone"
+        android:padding="5dp"/>
+    <EditText
+        android:id="@+id/edt_passPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write verifycation code here"
+        android:inputType="number"
+        android:background="@drawable/inputs"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/password"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_send_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_margin="10dp"
+        android:text="Send Verification code"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"/>
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Verify"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"/>
+
+</LinearLayout>

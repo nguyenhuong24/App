@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.ChatActivity">
+    <include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/chat_toolbar">
+
+    </include>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/ll_chat"
+        android:layout_below="@id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_private_mess"/>
+    <LinearLayout
+        android:id="@+id/ll_chat"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <ImageButton
+
+            android:background="@android:color/darker_gray"
+            android:padding="8dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/file_icon"
+            android:scaleType="fitCenter"
+            android:id="@+id/send_file"/>
+        <EditText
+            android:background="@drawable/custom_edittext"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/edt_input_mess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Write your message"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/btn_sendMess"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/send_message" />
+    </LinearLayout>
+
+</RelativeLayout>

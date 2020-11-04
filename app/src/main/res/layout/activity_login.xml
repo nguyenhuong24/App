@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/login"
+            android:scaleType="centerCrop"/>
+        <EditText
+            android:background="@drawable/inputs"
+            android:id="@+id/edt_email_login"
+            android:inputType="textEmailAddress"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="Email"
+            android:drawableLeft="@drawable/email" />
+        <EditText
+            android:inputType="textPassword"
+            android:background="@drawable/inputs"
+            android:id="@+id/edt_pass_login"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="Password"
+            android:drawableLeft="@drawable/password" />
+        <TextView
+            android:id="@+id/tv_forgetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget password?"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:textColor="@color/colorPrimaryDark"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:background="@drawable/button"
+            android:textColor="@color/cardview_light_background"/>
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need new Account"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+             />
+        <TextView
+            android:id="@+id/tv_using_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or Login using your"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/facebook"
+                android:id="@+id/btn_lg_face"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
